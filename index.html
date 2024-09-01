@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./app.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+
+<body>
+   <main>
+      <!-- Sign-up form start -->
+    <section id="cardLogin" class="card">
+      <article class="card__img">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="Imagen principal">
+        </picture>
+      </article>
+      <article class="card__info">
+        <header class="card__info__header">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </header>
+        <div class="card__info__list">
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+        <form novalidate id="formulario">
+          <div class="card__form__label">
+            <label for="email">Email address</label><br>
+            <span id="message_error"></span>
+          </div>
+          <fieldset id="fieldsetInput">
+            <input type="text" id="email" name="email" placeholder="email@company.com">
+          </fieldset>
+          <button type="submit" id="submitFormBtn" class="btn">Subscribe to monthly newsletter</button>
+        </form>
+      </article>
+    </section>
+    <!-- Sign-up form end -->
+     
+    <!-- Success message start -->
+    <section id="cardThanks" class="card_message_thanks deactivate">
+      <header>
+        <img src="./assets/images/icon-success.svg" alt="icono de subscripción exitoso.">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </header>
+      <button id="btnDismiss" class="btn">Dismiss message</button>
+    </section>
+    <!-- Success message end -->
+   </main>
+   <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">JJorgeMS</a>.
+    </div>
+   </footer>
+</body>
+</html>
